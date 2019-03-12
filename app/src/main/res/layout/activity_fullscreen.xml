@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                 xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                 xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@android:color/white"
+             tools:context=".FullscreenActivity">
+
+
+<android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.55
+"
+            android:id="@+id/guideline"/>
+
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintGuide_percent="0.0"
+            android:id="@+id/guideline2"/>
+
+    <TextView
+            android:text="@string/lblUsaCuentaUber"
+            android:layout_width="213dp"
+            android:layout_height="57dp"
+            android:id="@+id/textView"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textAlignment="center"
+            app:layout_constraintTop_toTopOf="@+id/guideline"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"/>
+
+    <Button
+            android:text="@string/continuar_como"
+            android:layout_width="343dp"
+            android:layout_height="62dp"
+            android:id="@+id/button"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:background="@android:color/holo_green_dark"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.498"/>
+
+    <Button
+            android:text="@string/no_eres"
+            android:layout_width="343dp"
+            android:layout_height="62dp"
+            android:id="@+id/button2"
+            android:layout_marginTop="14dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textAllCaps="false"
+            android:background="@drawable/border"
+            app:layout_constraintTop_toBottomOf="@+id/button"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.498"/>
+
+    <Button
+            android:text="@string/omitir_por_ahora"
+            android:layout_width="343dp"
+            android:layout_height="62dp"
+            android:id="@+id/button3"
+            android:layout_marginTop="14dp"
+            android:textSize="16sp"
+            android:textColor="@android:color/holo_green_dark"
+            android:textAllCaps="false"
+            android:background="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/button2"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.498"/>
+
+    <ImageView
+            app:srcCompat="@drawable/portrait_login"
+            android:id="@+id/imageView"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/guideline"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="0dp"
+            android:layout_height="0"
+            android:layout_width="match_parent"
+            android:contentDescription="portrait"
+            tools:layout_editor_absoluteX="0dp"
+            app:layout_constraintVertical_bias="1.0"/>
+
+</android.support.constraint.ConstraintLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

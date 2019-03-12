@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">demoui</string>
+
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="lblUsaCuentaUber">Usa tu cuenta Uber para comenzar</string>
+    <string name="continuar_como">Continuar como David</string>
+    <string name="no_eres">No eres David?</string>
+    <string name="omitir_por_ahora">Omitir por Ahora</string>
+</resources>
